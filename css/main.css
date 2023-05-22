@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 * {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -283,32 +283,28 @@ section {
 }
 
 .home .slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 60rem;
-  background-size: cover !important;
-  background-position: center !important;
+  background-size: cover;
+  background-position: center;
 }
 
 .home .slide .content {
-  width: 50rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .home .slide .content h3 {
   font-size: 5rem;
   text-transform: capitalize;
-  color: #444;
   color: #fff;
 }
 
 .home .slide .content p {
   font-size: 1.6rem;
   line-height: 2;
-  color: #777;
   color: #eee;
   padding: 1rem 0;
 }
@@ -316,6 +312,7 @@ section {
 .swiper-pagination-bullet-active {
   background: #f5324c;
 }
+
 
 .subjects .box-container {
   display: -ms-grid;
@@ -991,6 +988,12 @@ section {
   section {
     padding: 3rem 2rem;
   }
+  .home .slide {
+    height: 60vw;
+    background-size: contain; /* Change background-size to contain */
+    background-repeat: no-repeat; /* Set background-repeat to no-repeat */
+    background-position: center center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1033,6 +1036,12 @@ section {
   .home .slide .content h3 {
     font-size: 3rem;
   }
+  .home .slide {
+    height: 60vw;
+    background-size: contain; /* Change background-size to contain */
+    background-repeat: no-repeat; /* Set background-repeat to no-repeat */
+    background-position: center center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1044,6 +1053,12 @@ section {
   }
   .about .content .about-title {
     font-size: 4rem;
+  }
+  .home .slide {
+    height: 60vw;
+    background-size: contain; /* Change background-size to contain */
+    background-repeat: no-repeat; /* Set background-repeat to no-repeat */
+    background-position: center center;
   }
 }
 /*# sourceMappingURL=style.css.map */
